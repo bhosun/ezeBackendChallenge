@@ -1,8 +1,7 @@
 const express = require("express")
 const bodyParser = require("body-parser");
 
-const Phone = require("./models/buyRequest");
-const sellPhone = require("./models/sellRequest");
+const port = process.env.PORT || 3000;
 
 const pullData = require("./controllers/pullPhonesController.js");
 const getPhones = require("./controllers/getPhones.js");
@@ -13,6 +12,6 @@ app.use(bodyParser.json());
 app.get("/google", pullData);
 app.get("/get", getPhones);
 
-app.listen(5000, () => {
+app.listen(port, () => {
 	console.log("Server has started!")
 })
