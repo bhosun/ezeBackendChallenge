@@ -13,4 +13,4 @@ const schema = mongoose.Schema({
 	}],
 })
 
-module.exports = mongoose.model("Phone", schema)
+module.exports = mongoose.model("sellPhone", schema)
