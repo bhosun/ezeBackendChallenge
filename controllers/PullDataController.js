@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 // mongoose.connect("mongodb://localhost:27017/eze", { useNewUrlParser: true })
 mongoose.connect("mongodb+srv://bhosun:bosunbosun71@cluster0.bcvul.mongodb.net/ezebackendChallenge?retryWrites=true&w=majority")
 const Phone = require("../models/buyRequest");
-const sellPhone = require("../models/sellRequest");
+// const sellPhone = require("../models/sellRequest");
 
 const authentication = async () => {
     const auth = new google.auth.GoogleAuth({
