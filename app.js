@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const Phone = require("./models/buyRequest");
 const sellPhone = require("./models/sellRequest");
 
-const pullData = require("./controllers/pullDataController.js");
+const pullData = require("./controllers/pullPhonesController.js");
 const getPhones = require("./controllers/getPhones.js");
 
 const app = express()
